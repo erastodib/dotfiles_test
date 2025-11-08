@@ -1,0 +1,45 @@
+# --- General ---
+*.log
+*~
+.DS_Store
+Thumbs.db
+
+# --- Cache and temp ---
+.cache/
+.local/share/
+.nv/
+.Trash-*/
+*.bak
+*.swp
+
+# --- System / session files ---
+.Xauthority
+.xsession-errors
+.xsession-errors.old
+.zcompdump*
+.history
+bash_history
+recently-used.xbel
+
+# --- Hyprland logs ---
+/home/*/.local/share/hypr/*.log
+
+# --- GTK, themes, icons cache ---
+.config/gtk-3.0/bookmarks
+.config/gtk-4.0/gtk.css
+.config/gtk-4.0/gtk-dark.css
+.icons/
+.themes/
+
+# --- VSCode / Codium ---
+.vscode/
+.vscode-oss/
+
+# --- JetBrains IDEs (like IntelliJ) ---
+.idea/
+
+# --- Python, Node, etc. (if you ever add scripts) ---
+__pycache__/
+node_modules/
+dist/
+build/
