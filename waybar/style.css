@@ -1,0 +1,121 @@
+@import "colors.css";
+
+* {
+    border: none;
+    font-family: "SF Pro Display", "JetBrainsMono Nerd Font";
+    font-size: 1rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @on_surface;
+}
+
+.modules-left,
+.modules-right {
+    margin: 0 10px;
+}
+
+tooltip {
+  background: @background;
+ /* border: 1px solid rgba(100, 114, 125, 0.5); */
+}
+tooltip label {
+  color: @on_surface;
+}
+
+#workspaces {
+    margin: 0 10px;
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+}
+
+#workspaces button {
+    background-color: transparent;
+    padding: 0 12px;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+#workspaces button label {
+    font-size: 1.3rem;
+    transition: color 150ms ease, font-size 200ms ease;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+#workspaces button:hover label {
+    color: @tertiary; /* or @secondary, @outline_variant — experiment with tone */
+    font-size: 1.5rem;
+    text-shadow: 0 0 4px alpha(@tertiary, 0.3);
+}
+
+/* #workspaces button.active {
+    background-color: @inverse_primary;
+    color: @on_surface;
+    padding: 0 15px;
+    border-radius: 100px;
+    transition: all 250ms ease-in-out;
+    font-weight: 700;
+} */
+
+#workspaces button.active label {
+    color: @primary;
+    font-size: 1.5rem;
+    text-shadow: 0 0 6px alpha(@primary, 0.4);
+}
+
+#workspaces button.active:hover label {
+    color: @tertiary;
+    text-shadow: 0 0 6px alpha(@tertiary, 0.4);
+}
+
+#bluetooth,
+#clock,
+#battery,
+#pulseaudio,
+#network {
+    border: 2px solid @primary;
+    border-radius: 100px;
+    background-color: transparent;
+    color: @primary;
+    margin: 0 5px;
+    padding: 0 15px;
+    transition: all 200ms ease-in-out;
+    padding: 0 8px;
+}
+
+#clock:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover {
+    border-color: @tertiary;
+    color: @tertiary;
+    text-shadow: 0 0 6px alpha(@tertiary, 0.4);
+    transition: all 200ms ease-in-out;
+}
+
+#window{
+    margin: 0 5px;
+}
+
+#clock {
+    padding: 0 7px;
+    font-weight: 500;
+}
+
+#pulseaudio {
+    padding: 0 8px;
+}
+
+#battery {
+    padding: 0 8px;
+}
+#bluetooth{
+    padding: 0 8px;
+}
