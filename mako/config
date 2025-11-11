@@ -1,0 +1,11 @@
+background-color=#121318ff
+text-color=#e3e2e9ff
+border-color=#4a5c92ff
+max-visible=3
+width=300
+height=100
+margin=10
+padding=15
+border-size=2
+default-timeout=5000
+font=SF Pro Display 10
